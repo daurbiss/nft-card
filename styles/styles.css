@@ -1,0 +1,168 @@
+/* background color and font styles */
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+/* flexbox - center the items */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* styling the NFT card */
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1em;
+  padding: 1.5em;
+  max-width: 20em;
+}
+
+/* This div contains an image and the icon */
+.image {
+  background-color: hsl(178, 100%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 20em;
+  max-height: 20em;
+  border-radius: 1em;
+}
+
+/* NFT image styling */
+.image img {
+  width: 20em;
+  height: 20em;
+  border-radius: 1em;
+}
+.image a {
+  max-height: 20em;
+}
+.image svg {
+  visibility: hidden;
+  position: absolute;
+}
+
+ /* show icon over image on hover */
+.image:hover img {
+  opacity: 0.5;
+}
+.image a:hover + svg {
+  visibility: visible;
+}
+
+
+/* heading and description styling */
+h1 {
+  font-size: 1.5em;
+}
+.heading {
+  color: white;
+  text-decoration: none;
+}
+.heading:hover{
+  color: hsl(178, 100%, 50%);
+}
+p {
+  font-size: 1em;
+  color: hsl(215, 51%, 70%);
+}
+
+/* the div that contains the price div and timer div
+  using flexbox, space-between to separate the 2 divs inside */
+.price-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+/* container has the svg and p tags for both price and timer */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 1.25em;
+}
+.container svg {
+  padding-right: 0.25em;
+}
+/* styling the price */
+.eth {
+  color: hsl(178, 100%, 50%);
+  display: inline;
+}
+/* styling the timer */
+.timer {
+  display: inline;
+}
+
+/* styling the line between the price and author */
+hr {
+  border: 0;
+  height: 0;
+  border-top: 0.5px solid hsl(215, 51%, 70%);
+}
+
+/* author avatar and name section */
+.bottom-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.5em;
+  max-height: 2em;
+}
+/* author avatar round styling */
+.bottom-card img {
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
+.bottom-card p {
+  display: inline;
+  padding-left: 1em;
+}
+.bottom-card a {
+  color: white;
+  text-decoration: none;
+}
+.bottom-card a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* footer styling */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* media query to change styling for mobile */
+@media only screen and (max-width: 375px) {
+  .image img {
+    width: 15em;
+    height: 15em;
+  }
+  .image {
+    max-width: 15em;
+    max-height: 15em;
+  }
+  .card {
+    max-width: 15em;
+  }
+  .image a {
+    max-height: 15em;
+  }
+  h1 {
+    font-size: 1.25em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
