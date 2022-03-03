@@ -12,7 +12,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://daurbiss.github.io/nft-card/)
 
 ### What I learned
 
